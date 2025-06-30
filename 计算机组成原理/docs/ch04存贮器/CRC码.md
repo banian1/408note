@@ -11,7 +11,7 @@ CRC(Cyclic Redundancy Check)码可以发现信息在存储或传送过程中连�
 
 设代编的信息码为\(D_{n-1}D_{n-2} \ldots D_{2}D_{1}D_{0}\),可用多项式\(M(x)\)表示:
 
-\[M(x)=D_{n-1}x^{n-1}+D_{n-2}x^{n-2}+ \ldots +D_{2}x^2+D_{1}x^1+D_{0}x^0\]
+$$M(x)=D_{n-1}x^{n-1}+D_{n-2}x^{n-2}+ \ldots +D_{2}x^2+D_{1}x^1+D_{0}x^0$$
 
 将信息码左移k位,得
 
@@ -37,5 +37,6 @@ M(x) \cdot x^k + R(x) & = [Q(x) \cdot G(x) + R(x)] + R(x)\\
 \end{align}\]
 
 因此,所得 CRC 码是一个可被生成多项式 G(x)除尽的数码。如果 CRC 码在传输过程中不出错,其余数必为 0;如果传输过程中出错,则余数不为0,再由该余数指出哪一位出错,即可纠正。
+[[Lecture10 MemoryManagement]]
 
 
